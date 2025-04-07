@@ -1,0 +1,51 @@
+<!--  Create a contact form with the following fields:
+o Full name (text input)
+o Email (email input)
+o Phone number (tel input)
+o Subject (dropdown menu)
+o Message (textarea)
+o Submit button -->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Form</title> 
+</head> 
+<body> 
+    <h2>Contact Us</h2> 
+    <form name="Contact Us"> 
+ 
+        <label for="fullname">Full Name:</label> 
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"> 
+        <br><br> 
+         
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" required placeholder="Enter your 
+email"> 
+        <br><br> 
+         
+        <label for="phone">Phone Number:</label> 
+        <input type="tel" id="phone" name="phone" 
+placeholder="Enter your phone number"> 
+        <br><br> 
+         
+        <label for="subject">Subject:</label> 
+        <select id="subject" name="subject" required> 
+            <option value="">Select a subject</option> 
+            <option value="support">Support</option> 
+            <option value="feedback">Feedback</option> 
+            <option value="other">Other</option> 
+        </select> 
+        <br><br> 
+ 
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea> 
+        <br><br> 
+         
+        <button type="submit">Submit</button> 
+         
+    </form> 
+</body> 
+</html> 
