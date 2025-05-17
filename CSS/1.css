@@ -1,0 +1,36 @@
+
+.form-container {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    background-color: #bac747;
+    border-radius: 8px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}

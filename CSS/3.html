@@ -1,0 +1,67 @@
+
+<!-- Create a navigation menu and use pseudo-classes to:
+o Change the color of links on hover.
+o Style form inputs when they are focused-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <style>
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: yellow;
+        }
+        #name, #email {
+            margin-top: 5px;
+            padding: 8px;
+            border: 6px solid #ccc;
+            border-radius: 10px;
+            transition: border-color 0.3s ease;
+        }
+        #name:focus, #email:focus {
+            border-color: blue;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+    </form>
+</body>
+</html>
